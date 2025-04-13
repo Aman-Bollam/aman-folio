@@ -10,11 +10,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#E6E6E6] py-8 mt-auto">
       <div className="container mx-auto px-4">
-        {isContactPage ? (
-          <div className="flex justify-center text-gray-600 text-sm">
-            <p>© 2024 Aman Bollam. All rights reserved.</p>
-          </div>
-        ) : (
+        {isContactPage ? null : (
           <div className="flex justify-center space-x-6 text-gray-600">
             <Link 
               href="mailto:amanb@terpmail.umd.edu"

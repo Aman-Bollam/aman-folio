@@ -2,21 +2,6 @@ import { Metadata } from "next";
 import Spline from "@splinetool/react-spline";
 import Image from "next/image";
 
-// This would typically come from an API or database
-const homeData = {
-  hero: {
-    first_name: "Aman",
-    last_name: "Bollam",
-    tag_line: "Full Stack Developer"
-  },
-  meta_title: "Aman Bollam - Portfolio",
-  meta_description: "Welcome to my portfolio website",
-  meta_image: {
-    url: "/images/meta-image.jpg",
-    alt: "Aman Bollam Portfolio"
-  }
-};
-
 export const metadata: Metadata = {
   title: "Aman Bollam - Portfolio",
   description: "Developer and Computer Science Student at UMD",

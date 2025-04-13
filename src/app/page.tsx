@@ -1,10 +1,9 @@
 import { Metadata } from "next";
-import Hero from "@/slices/Hero";
-import { HomeData } from "@/types";
 import Spline from "@splinetool/react-spline";
+import Image from "next/image";
 
 // This would typically come from an API or database
-const homeData: HomeData = {
+const homeData = {
   hero: {
     first_name: "Aman",
     last_name: "Bollam",
@@ -55,11 +54,12 @@ export default function HomePage() {
           <div className="border-t border-black my-4"></div>
           <div className="space-y-8">
             <div className="flex items-start gap-6">
-              <img 
-                src="/pinterest-logo.svg" 
+              <Image 
+                src="/pinterest-logo.png" 
                 alt="Pinterest Logo" 
+                width={64}
+                height={64}
                 className="w-16 h-16"
-                style={{ filter: 'brightness(0)' }}
               />
               <div>
                 <h3 className="text-2xl font-light">Pinterest</h3>
@@ -71,7 +71,7 @@ export default function HomePage() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="pb-20 pt-36 bg-[#E6E6E6]">
+      <section id="projects" className="pb-20 pt-16 bg-[#E6E6E6]">
         <div className="container mx-auto px-4">
           <h2 className="text-5xl font-light mb-4">Projects</h2>
           <div className="border-t border-black my-4"></div>
@@ -94,9 +94,11 @@ export default function HomePage() {
               </div>
             </div>
             <div className="flex items-start gap-6">
-              <img 
-                src="https://raw.githubusercontent.com/Aman-Bollam/Space-Invaders/master/images/ship-phase-1-pos1.png"
+              <Image 
+                src="/space-invaders.png"
                 alt="Space Invaders" 
+                width={64}
+                height={64}
                 className="w-16 h-16 object-contain"
               />
               <div>
@@ -113,9 +115,11 @@ export default function HomePage() {
               </div>
             </div>
             <div className="flex items-start gap-6">
-              <img 
-                src="https://raw.githubusercontent.com/Aman-Bollam/FlappyBird/master/FlappyBird/bird1.png"
+              <Image 
+                src="/flappy-bird.png"
                 alt="Flappy Bird" 
+                width={64}
+                height={64}
                 className="w-16 h-16 object-contain"
               />
               <div>

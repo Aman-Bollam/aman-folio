@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function ContactPage() {
   return (
     <div className="min-h-screen pt-20 bg-[#E6E6E6]">
@@ -8,9 +10,11 @@ export default function ContactPage() {
         <div className="max-w-4xl mx-auto mt-11 flex flex-col md:flex-row items-center gap-12">
           <div className="w-full md:w-1/3 flex items-center">
             <div className="flex justify-center transform -translate-x-[35%]">
-              <img 
+              <Image 
                 src="/aman-profile.jpg" 
                 alt="Aman Bollam" 
+                width={280}
+                height={280}
                 className="w-full max-w-[280px] rounded-lg shadow-lg"
               />
             </div>

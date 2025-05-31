@@ -38,7 +38,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#E6E6E6]/80 backdrop-blur-sm">
       <nav className="container mx-auto px-4 py-4">
-        <ul className="flex justify-center space-x-8 text-lg">
+        <ul className="flex justify-center space-x-4 md:space-x-8 text-lg">
           <li>
             <button
               onClick={() => scrollToSection('top')}

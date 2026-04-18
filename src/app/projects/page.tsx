@@ -37,6 +37,23 @@ export default function ProjectsPage() {
             </a>
           </div>
         </div>
+        <div className="bg-white p-6 rounded-lg shadow">
+          <h2 className="text-2xl font-bold mb-2">OOTDLY</h2>
+          <p className="text-gray-700 mb-4">
+            A fashion app that lets users create and share daily outfits, discover style inspiration,
+            and build a personalized wardrobe collection.
+          </p>
+          <div className="flex space-x-4">
+            <a
+              href="https://youtu.be/Z71EN_UgoBo?si=88VfDEC_YRN6FZyp&t=237"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800"
+            >
+              View Demo on YouTube
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );

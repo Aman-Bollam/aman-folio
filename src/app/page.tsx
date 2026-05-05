@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Spline from "@splinetool/react-spline";
 import Image from "next/image";
+import ProjectCard from "@/components/ProjectCard";
+import { projects } from "@/data/projects";
 
 export const metadata: Metadata = {
   title: "Aman Bollam - Portfolio",
@@ -76,103 +78,9 @@ export default function HomePage() {
           <h2 className="text-4xl md:text-5xl font-light mb-4">Projects</h2>
           <div className="border-t border-black my-4"></div>
           <div className="space-y-8">
-            <div className="flex items-start gap-4 md:gap-6">
-              <Image
-                src="/terpsense.png"
-                alt="TerpSense Logo"
-                width={64}
-                height={64}
-                className="w-12 h-12 md:w-16 md:h-16 object-contain rounded-lg"
-              />
-              <div>
-                <h3 className="text-xl md:text-2xl font-light">TerpSense</h3>
-                <p className="text-lg md:text-xl italic mb-2">Real-time AI financial intervention app that analyzes purchases before checkout</p>
-                <a
-                  href="https://github.com/Aman-Bollam/TerpSense"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 text-sm"
-                >
-                  View on GitHub →
-                </a>
-              </div>
-            </div>
-            <div className="flex items-start gap-4 md:gap-6">
-              <div className="w-12 h-12 md:w-16 md:h-16 bg-pink-400 rounded-lg flex items-center justify-center">
-                <span className="text-white text-xs md:text-sm font-bold">OOTD</span>
-              </div>
-              <div>
-                <h3 className="text-xl md:text-2xl font-light">OOTDLY</h3>
-                <p className="text-lg md:text-xl italic mb-2">A fashion app for creating and sharing daily outfits</p>
-                <a
-                  href="https://youtu.be/Z71EN_UgoBo?si=88VfDEC_YRN6FZyp&t=237"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 text-sm"
-                >
-                  View Demo on YouTube →
-                </a>
-              </div>
-            </div>
-            <div className="flex items-start gap-4 md:gap-6">
-              <div className="w-12 h-12 md:w-16 md:h-16 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white text-xl md:text-2xl font-light">ML</span>
-              </div>
-              <div>
-                <h3 className="text-xl md:text-2xl font-light">LSTM Stock Predictor</h3>
-                <p className="text-lg md:text-xl italic mb-2">Stock price prediction using neural networks</p>
-                <a
-                  href="https://github.com/Aman-Bollam/LSTM-model-Stock-Predictor"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 text-sm"
-                >
-                  View on GitHub →
-                </a>
-              </div>
-            </div>
-            <div className="flex items-start gap-4 md:gap-6">
-              <Image
-                src="/space-invaders.png"
-                alt="Space Invaders"
-                width={64}
-                height={64}
-                className="w-12 h-12 md:w-16 md:h-16 object-contain"
-              />
-              <div>
-                <h3 className="text-xl md:text-2xl font-light">Space Invaders</h3>
-                <p className="text-lg md:text-xl italic mb-2">A customizable Java Swing game inspired by the 1978 arcade classic</p>
-                <a
-                  href="https://github.com/Aman-Bollam/Space-Invaders"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 text-sm"
-                >
-                  View on GitHub →
-                </a>
-              </div>
-            </div>
-            <div className="flex items-start gap-4 md:gap-6">
-              <Image
-                src="/flappy-bird.png"
-                alt="Flappy Bird"
-                width={64}
-                height={64}
-                className="w-12 h-12 md:w-16 md:h-16 object-contain"
-              />
-              <div>
-                <h3 className="text-xl md:text-2xl font-light">Flappy Bird</h3>
-                <p className="text-lg md:text-xl italic mb-2">A Java Swing-based recreation of the classic game</p>
-                <a
-                  href="https://github.com/Aman-Bollam/FlappyBird"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 text-sm"
-                >
-                  View on GitHub →
-                </a>
-              </div>
-            </div>
+            {projects.map((project) => (
+              <ProjectCard key={project.title} project={project} />
+            ))}
           </div>
         </div>
       </section>

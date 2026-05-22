@@ -19,7 +19,7 @@ export default function Footer() {
               Email
             </Link>
             <Link 
-              href="https://drive.google.com/file/d/1EJgAM3xXs3qUktiNwHuKSjR0HQZM2Az2/view?usp=sharing"
+              href="https://www.overleaf.com/read/jspvtqxpfwpz#2333e9"
               className="hover:text-gray-900 transition-colors"
               target="_blank"
               rel="noopener noreferrer"

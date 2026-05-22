@@ -9,6 +9,22 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "Landline",
+    description:
+      "property management platform that turns tenant maintenance calls into AI-routed service tickets and real-time landlord updates.",
+    href: "https://www.youtube.com/watch?v=hVYeVVmle1w",
+    linkLabel: "View Demo →",
+    image: { src: "/landlinelogo.png", alt: "Landline Logo" },
+  },
+  {
+    title: "Fast Fourier Transform Lab",
+    description:
+      "Interactive FFT learning platform with runnable code, practice problems, and an online judge",
+    href: "https://aman-bollam.github.io/fast-fourier-transform-presentation",
+    linkLabel: "View Demo →",
+    image: { src: "/fft.png", alt: "FTT Logo" },
+  },
+  {
     title: "IMC Prosperity 4",
     description:
       "Algorithmic trading research repo for IMC Prosperity finalist strategy development",

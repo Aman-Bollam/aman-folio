@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import Spline from "@splinetool/react-spline";
 import Image from "next/image";
 import ProjectCard from "@/components/ProjectCard";
+import SplineHero from "@/components/SplineHero";
 import { projects } from "@/data/projects";
 
 export const metadata: Metadata = {
@@ -17,10 +17,7 @@ export default function HomePage() {
         {/* Left side: Spline - Hidden on mobile */}
         <div className="hidden md:block w-full md:w-1/2 h-[50vh] md:h-auto relative overflow-hidden" style={{ clipPath: "inset(0 0 60px 0)" }}>
           <div className="absolute inset-0">
-            <Spline
-              scene="https://prod.spline.design/jK4TUn1TM29VPjwI/scene.splinecode"
-              className="w-full h-full"
-            />
+            <SplineHero scene="https://prod.spline.design/jK4TUn1TM29VPjwI/scene.splinecode" />
           </div>
         </div>
         

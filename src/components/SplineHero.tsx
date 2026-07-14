@@ -1,12 +1,7 @@
 "use client";
 
-import dynamic from "next/dynamic";
+import Spline from "@splinetool/react-spline";
 import { Component, ReactNode } from "react";
-
-const Spline = dynamic(() => import("@splinetool/react-spline"), {
-  ssr: false,
-  loading: () => <div className="w-full h-full" />,
-});
 
 class SplineErrorBoundary extends Component<
   { children: ReactNode; fallback: ReactNode },

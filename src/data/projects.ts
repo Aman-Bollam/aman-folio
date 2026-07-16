@@ -9,6 +9,14 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "ClinicVoice AI",
+    description:
+      "AI phone receptionist that schedules patient appointments over a real phone call.",
+    href: "https://github.com/Aman-Bollam/clinicvoice-ai",
+    linkLabel: "View on GitHub →",
+    image: { src: "/clinicvoiceai-removebg-preview.png", alt: "ClinicVoice AI Logo" },
+  },
+  {
     title: "Landline",
     description:
       "property management platform that turns tenant maintenance calls into AI-routed service tickets and real-time landlord updates.",

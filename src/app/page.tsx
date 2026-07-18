@@ -1,13 +1,7 @@
-import { Metadata } from "next";
 import Image from "next/image";
 import ProjectCard from "@/components/ProjectCard";
 import SplineHero from "@/components/SplineHero";
 import { projects } from "@/data/projects";
-
-export const metadata: Metadata = {
-  title: "Aman Bollam - Portfolio",
-  description: "Software engineer and computer science graduate from UMD",
-};
 
 export default function HomePage() {
   return (

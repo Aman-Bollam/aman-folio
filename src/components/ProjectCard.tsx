@@ -5,15 +5,17 @@ export default function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="flex items-start gap-4 md:gap-6">
       {project.image ? (
+        // Logos are decorative: the project title is adjacent text
         <Image
           src={project.image.src}
-          alt={project.image.alt}
+          alt=""
           width={64}
           height={64}
           className="w-12 h-12 md:w-16 md:h-16 object-contain rounded-lg"
         />
       ) : project.fallback ? (
         <div
+          aria-hidden="true"
           className={`w-12 h-12 md:w-16 md:h-16 ${project.fallback.bg} rounded-lg flex items-center justify-center`}
         >
           <span className={`text-white ${project.fallback.textClassName ?? ""}`}>

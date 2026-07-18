@@ -1,15 +1,17 @@
 import Image from "next/image";
 import ProjectCard from "@/components/ProjectCard";
+import SectionSpaceNav from "@/components/SectionSpaceNav";
 import SplineHero from "@/components/SplineHero";
 import { projects } from "@/data/projects";
 
 export default function HomePage() {
   return (
     <div className="flex flex-col">
+      <SectionSpaceNav />
       {/* Hero Section */}
-      <section className="min-h-[60vh] md:min-h-screen flex flex-col md:flex-row pt-16 md:pt-0">
+      <section className="min-h-[40vh] md:min-h-screen flex flex-col md:flex-row pt-16 md:pt-0">
         {/* Left side: Spline - Hidden on mobile */}
-        <div className="hidden md:block w-full md:w-1/2 h-[50vh] md:h-auto relative overflow-hidden" style={{ clipPath: "inset(0 0 60px 0)" }}>
+        <div aria-hidden="true" className="hidden md:block w-full md:w-1/2 h-[50vh] md:h-auto relative overflow-hidden" style={{ clipPath: "inset(0 0 60px 0)" }}>
           <div className="absolute inset-0">
             <SplineHero scene="https://prod.spline.design/jK4TUn1TM29VPjwI/scene.splinecode" />
           </div>
@@ -32,9 +34,9 @@ export default function HomePage() {
           <div className="space-y-8">
             {/* Microsoft Emerging Leaders Experience - now first, styled like Pinterest */}
             <div className="flex items-start gap-4 md:gap-6">
-              <Image 
-                src="/microsoft-logo.png" 
-                alt="Microsoft Logo" 
+              <Image
+                src="/microsoft-logo.png"
+                alt=""
                 width={64}
                 height={64}
                 className="w-12 h-12 md:w-16 md:h-16 object-contain"
@@ -46,9 +48,9 @@ export default function HomePage() {
             </div>
             {/* Pinterest Experience - now second */}
             <div className="flex items-start gap-4 md:gap-6">
-              <Image 
-                src="/pinterest-logo.png" 
-                alt="Pinterest Logo" 
+              <Image
+                src="/pinterest-logo.png"
+                alt=""
                 width={64}
                 height={64}
                 className="w-12 h-12 md:w-16 md:h-16"

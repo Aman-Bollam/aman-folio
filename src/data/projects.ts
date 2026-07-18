@@ -11,7 +11,7 @@ export const projects: Project[] = [
   {
     title: "ClinicVoice AI",
     description:
-      "AI phone receptionist that schedules patient appointments over a real phone call.",
+      "AI receptionist that schedules patient appointments over real phone calls.",
     href: "https://github.com/Aman-Bollam/clinicvoice-ai",
     linkLabel: "View on GitHub →",
     image: { src: "/clinicvoiceai-removebg-preview.png", alt: "ClinicVoice AI Logo" },
@@ -19,7 +19,7 @@ export const projects: Project[] = [
   {
     title: "Landline",
     description:
-      "property management platform that turns tenant maintenance calls into AI-routed service tickets and real-time landlord updates.",
+      "Turns tenant maintenance calls into AI-routed tickets and landlord updates.",
     href: "https://www.youtube.com/watch?v=hVYeVVmle1w",
     linkLabel: "View Demo →",
     image: { src: "/landlinelogo.png", alt: "Landline Logo" },
@@ -27,7 +27,7 @@ export const projects: Project[] = [
   {
     title: "Fast Fourier Transform Lab",
     description:
-      "Interactive FFT learning platform with runnable code, practice problems, and an online judge",
+      "Interactive FFT learning platform with practice problems and online judge",
     href: "https://aman-bollam.github.io/fast-fourier-transform-presentation",
     linkLabel: "View Demo →",
     image: { src: "/fft.png", alt: "FTT Logo" },
@@ -43,7 +43,7 @@ export const projects: Project[] = [
   {
     title: "AirEquity",
     description:
-      "AI housing health assistant for air quality risk detection and tenant report generation",
+      "AI housing assistant that detects air quality risks for tenants",
     href: "https://github.com/Aman-Bollam/airequity",
     linkLabel: "View on GitHub →",
     image: { src: "/airequityy.png", alt: "AirEquity Logo" },
@@ -63,6 +63,10 @@ export const projects: Project[] = [
     linkLabel: "View Demo on YouTube →",
     fallback: { bg: "bg-pink-400", text: "OOTD", textClassName: "text-xs md:text-sm font-bold" },
   },
+];
+
+// Older projects kept for reference but no longer shown in the portfolio.
+export const archivedProjects: Project[] = [
   {
     title: "LSTM Stock Predictor",
     description: "Stock price prediction using neural networks",

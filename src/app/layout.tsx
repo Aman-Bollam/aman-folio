@@ -12,7 +12,7 @@ const inknutAntiqua = Inknut_Antiqua({
 
 export const metadata: Metadata = {
   title: "Aman Bollam - Portfolio",
-  description: "Full Stack Developer and Computer Science Student at UMD",
+  description: "Software engineer and computer science graduate from UMD",
 };
 
 export default function RootLayout({

@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 
 export default function Header() {
@@ -64,9 +63,12 @@ export default function Header() {
             </button>
           </li>
           <li>
-            <Link href="/contact" className="hover:text-gray-600 transition-colors">
+            <button
+              onClick={() => scrollToSection('contact')}
+              className="hover:text-gray-600 transition-colors"
+            >
               Contact
-            </Link>
+            </button>
           </li>
         </ul>
       </nav>

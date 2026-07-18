@@ -10,15 +10,18 @@ export default function HomePage() {
       <SectionSpaceNav />
       {/* Hero Section */}
       <section className="min-h-[40vh] md:min-h-screen flex flex-col md:flex-row pt-16 md:pt-0">
-        {/* Left side: Spline - Hidden on mobile */}
-        <div aria-hidden="true" className="hidden md:block w-full md:w-1/2 h-[50vh] md:h-auto relative overflow-hidden" style={{ clipPath: "inset(0 0 60px 0)" }}>
-          <div className="absolute inset-0">
+        {/* Spline artwork: below the text on mobile, left side on desktop.
+            The scene renders at a fixed ~600x630 scale, so on mobile the canvas
+            keeps that size and is shrunk with a transform to fit the viewport;
+            the container height crops the watermark area at the bottom. */}
+        <div aria-hidden="true" className="order-2 md:order-1 w-full md:w-1/2 h-[350px] md:h-auto relative overflow-hidden md:[clip-path:inset(0_0_60px_0)]">
+          <div className="absolute left-1/2 -translate-x-1/2 scale-[0.62] origin-top w-[600px] h-[630px] md:inset-0 md:left-0 md:translate-x-0 md:scale-100 md:w-auto md:h-auto">
             <SplineHero scene="https://prod.spline.design/jK4TUn1TM29VPjwI/scene.splinecode" />
           </div>
         </div>
-        
-        {/* Right side: Content - Full width on mobile */}
-        <div className="w-full md:w-1/2 p-8 flex flex-col justify-center">
+
+        {/* Content: above the artwork on mobile, right side on desktop */}
+        <div className="order-1 md:order-2 w-full md:w-1/2 p-8 flex flex-col justify-center">
           <h1 className="text-4xl md:text-6xl font-light mb-4">Aman Bollam</h1>
           <p className="text-xl md:text-2xl text-gray-800">
             building ideas into products

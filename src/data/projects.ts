@@ -32,6 +32,10 @@ export const projects: Project[] = [
     linkLabel: "View Demo →",
     image: { src: "/fft.png", alt: "FTT Logo" },
   },
+];
+
+// Older projects kept for reference but no longer shown in the portfolio.
+export const archivedProjects: Project[] = [
   {
     title: "IMC Prosperity 4",
     description:
@@ -63,10 +67,6 @@ export const projects: Project[] = [
     linkLabel: "View Demo on YouTube →",
     fallback: { bg: "bg-pink-400", text: "OOTD", textClassName: "text-xs md:text-sm font-bold" },
   },
-];
-
-// Older projects kept for reference but no longer shown in the portfolio.
-export const archivedProjects: Project[] = [
   {
     title: "LSTM Stock Predictor",
     description: "Stock price prediction using neural networks",

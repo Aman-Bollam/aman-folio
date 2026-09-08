@@ -35,6 +35,20 @@ export default function HomePage() {
           <h2 className="text-4xl md:text-5xl font-light mb-4">Experience</h2>
           <div className="border-t border-black my-4"></div>
           <div className="space-y-8">
+            {/* Salesforce Experience */}
+            <div className="flex items-start gap-4 md:gap-6">
+              <Image
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Salesforce.com_logo.svg/3840px-Salesforce.com_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+                alt=""
+                width={64}
+                height={64}
+                className="w-12 h-12 md:w-16 md:h-16 object-contain"
+              />
+              <div>
+                <h3 className="text-xl md:text-2xl font-light">Salesforce</h3>
+                <p className="text-lg md:text-xl italic">AI Builder (FDE)</p>
+              </div>
+            </div>
             {/* Microsoft Emerging Leaders Experience - now first, styled like Pinterest */}
             <div className="flex items-start gap-4 md:gap-6">
               <Image
@@ -46,7 +60,7 @@ export default function HomePage() {
               />
               <div>
                 <h3 className="text-xl md:text-2xl font-light">Microsoft</h3>
-                <p className="text-lg md:text-xl italic">Emerging Leaders for College Students Program</p>
+                <p className="text-lg md:text-xl italic">Emerging Leaders</p>
               </div>
             </div>
             {/* Pinterest Experience - now second */}
@@ -60,7 +74,7 @@ export default function HomePage() {
               />
               <div>
                 <h3 className="text-xl md:text-2xl font-light">Pinterest</h3>
-                <p className="text-lg md:text-xl italic">Engage Participant</p>
+                <p className="text-lg md:text-xl italic">Engage</p>
               </div>
             </div>
           </div>
@@ -70,7 +84,7 @@ export default function HomePage() {
       {/* Projects Section */}
       <section id="projects" className="pb-20 pt-16 bg-[#E6E6E6]">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-light mb-4">Projects</h2>
+          <h2 className="text-4xl md:text-5xl font-light mb-4">Selected Projects</h2>
           <div className="border-t border-black my-4"></div>
           <div className="space-y-8">
             {projects.map((project) => (

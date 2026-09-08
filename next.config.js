@@ -8,8 +8,14 @@ const nextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'thumb.wikimedia.org',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 }
 
-module.exports = nextConfig 
+module.exports = nextConfig
